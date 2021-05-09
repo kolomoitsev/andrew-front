@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import { Router } from 'react-router';
+import HomePage from './pages/homepage.page';
+import SignInPage from './pages/signinpage.page'
+import PrivateRoute from "./components/PrivateRoute.component";
+const createHistory = require('history').createBrowserHistory;
+const history = createHistory({ forceRefresh: true });
 
-function App() {
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router history={history}>
+        <Switch>
+          <Route exact path={'/auth'} component={() =>  <SignInPage /> } />
+          <PrivateRoute path={'/'} component={() => <HomePage />}/>
+        </Switch>
+      </Router>
   );
 }
 

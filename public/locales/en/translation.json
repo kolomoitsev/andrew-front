@@ -1,0 +1,22 @@
+{
+  "title": "Dashboard",
+  "general": "General",
+  "logout": "Log out",
+  "settings": "Settings",
+  "hTitle": "Emergencies page",
+  "noEmergencies": "No emergencies",
+  "type": "Type: ",
+  "name": "Name: ",
+  "diagnostics": "Diagnostics: ",
+  "addBrigade": "Add brigade",
+  "selectEmergency": "Select brigade",
+  "selectSubtitle": "For updating emergency select a brigade",
+  "cancel": "Cancel",
+  "save": "Save",
+  "settingsTitle": "Settings page",
+  "changeEmail": "Change email",
+  "changePassword": "Change password",
+  "update email": "Update email",
+  "updateHint": "For updating email enter a new one",
+  "updatePass": "For updating password enter a new one"
+}
